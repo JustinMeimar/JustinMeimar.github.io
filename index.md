@@ -2,6 +2,7 @@
 layout: default
 ---
 # Justin's Two Bytes &#128126;
+*To help me postpone LLM dependence*
 
 <div class="posts-list">
     {% for post in site.posts %}
