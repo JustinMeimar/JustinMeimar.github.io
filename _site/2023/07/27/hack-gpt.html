@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Biscuit is a single-page responsive Jekyll theme. This is the most simple and still-good-looking Jekyll theme that you can find.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscuit Theme for Jekyll</title>
+    <link rel="stylesheet" href="/css/main.css">
+  
+  </head>
+  <body>
+    <div class="container">
+      <article class="page-content">
+    <header>
+        <h1>HackGPT Edmonton</h1>
+        <p class="post-date">July 27, 2023</p>
+    </header>
+    <section>
+        <p>A couple weeks ago, my friend Seif gave me a call. And just like that HackGPT, Edmonton’s first large language model Hackathon was on the table.</p>
+
+<p>The event was sponsored and organized by a company called <a href="https://place.com">Place</a>. Since they are a Real Estate company, bonus points were given to teams whose project related to the industry.</p>
+
+<p>Aziz had the idea to develop an interface that allowed users to chat with homes in their area, and prompt semantic queries like <em>Show me some apartments with a view of the North Saskatchewan river.</em></p>
+
+<p>Me and Kevin got to work on the nuts and bolts of the applications, while Seif and Aziz tinkered with the delicate art of embedding the listing data. Our approach was to embed the textual description of each listing, while the remaining JSON fields were repurposed as metadata. This way, queries for quantitative attributes like <em>number of bedrooms and bathrooms</em> or <em>min and max price</em> could still be retrieved exactly. And for qualitative attributes, once the metadata had narrowed down the listing choices, we could select the three vectors with the maximum <a href="https://">Cosine Similarity</a>, and render each original listing on the frontend.</p>
+
+<p>We used other techniques like prompt-chaining to generate a richer, standardized query template, as well as a long term memory so that each user interaction had carried over.</p>
+
+<p>As is typical in Hackathons, we had a number of unpolished features. I had to give up on drawing the map markers in the last five minutes, even though the latitude and longitude data was right at my finger tips! Some rough edges notwithstanding, we had a solid presentation and put strong emphasis on how a future data engine could be greatly improved.</p>
+
+<p>Thanks to my teammates and a great environment (lots of cool and interesting people we met there), we manage to walk away with first place!</p>
+
+<p>Thanks for reading,</p>
+
+<p>- Justin</p>
+
+    </section>
+</article>
+
+    </div>
+  <div id="footer">
+<center>
+<small> This site uses a simple and beautiful Jekyll theme: <a href="https://sblisesivdin.github.io/biscuit">Biscuit</a></small>
+</center>
+</div>
+
+  </body>
+</html>
