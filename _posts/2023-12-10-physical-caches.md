@@ -9,9 +9,9 @@ I've been taking a computer architecture class this semester and its got me thin
 Take for example, the company Amazon. Their entire business model is basically just a cache for physical goods. 
 In their warehouses all over the world, items with *high temporal locality* (best selling items)
 and *high spacial locality* (customers in Canada more likely to buy a snow shovel, Arizona not so much)
-are stocked and ready for ~access~ *purchase*.
+are stocked and ready for ~~access~~ *purchase*.
 
-It also plays out into prefetching. Around chirstmas every year, amazon probably has some YOY stride predictor that says every 12 months certain toys are usually bought. So they make a timely prefetch in November place a big order. I guess it is likely the vendors that actually do this, thats besides the point. 
+It also plays out into prefetching. Amazon probably has some stride predictor with a stride of 12 months suggesting certain toys are usually bought in December for Christmas. They can make a timely prefetch in November and place a big order. I guess it is likely the vendors that actually do this, thats besides the point. 
 
 But what I'm saying is pretty obvious. Everyone has already known this. Why does English choose to use the word store? A store is called a *store*, because it stores things. And sometimes when the store doesn't have an item, you have to wait for inventory. Then maybe when the item is back in stock, they send you a message. Then your processor broadcasts the item on the CDB and wakes up the sleepy instructions... or maybe not.
 
